@@ -6,12 +6,15 @@ Requirements
 
 	* PHP 5.2.x
 
+Features
+========
+
+    * Convert single or multiple numbers
+    * Convert USD currency
+    * Convert all numbers within a string
+    * Supports up to octillions
+
 Documentation
 =============
 
 	* http://www.milesj.me/resources/script/numword
-
-Installation
-============
-
-	* Include the class file (numword.php) and statically call the methods
