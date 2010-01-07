@@ -1,0 +1,17 @@
+Numword - Number to Word Converter
+**********************************
+
+Requirements
+============
+
+	* PHP 5.2.x
+
+Documentation
+=============
+
+	* http://www.milesj.me/resources/script/numword
+
+Installation
+============
+
+	* Include the class file (numword.php) and statically call the methods
