@@ -1,21 +1,18 @@
 <?php
 /**
- * numword.php
- *
- * Converts a number to its word form.
+ * Numword - Converts a number to its word form.
  * 
  * @author 		Miles Johnson - www.milesj.me
  * @copyright	Copyright 2006-2009, Miles Johnson, Inc.
  * @license 	http://www.opensource.org/licenses/mit-license.php - Licensed under The MIT License
- * @package     Numword
- * @version     1.4
  * @link		www.milesj.me/resources/script/numword
  */
 
 class Numword {
 
 	/**
-	 * Current version: www.milesj.me/files/logs/numword
+	 * Current version: www.milesj.me/resources/logs/numword
+	 *
 	 * @access public
 	 * @var int
 	 */
