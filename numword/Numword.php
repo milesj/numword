@@ -185,6 +185,7 @@ class Numword {
 	 *
 	 * @access public
 	 * @param int $number
+	 * @param array $currency
 	 * @return string
 	 * @static
 	 */
@@ -192,7 +193,8 @@ class Numword {
 		$locale = localeconv();
 		$currency = $currency + array(
 			'dollar' => 'dollar(s)',
-			'cent' => 'cent(s)'
+			'cent' => 'cent(s)',
+			'and' => '&'
 		);
 
 		$number = trim(str_replace(array($locale['currency_symbol'], $locale['mon_thousands_sep']), '', $number));
@@ -202,7 +204,7 @@ class Numword {
 		$return = self::__convert($amount) .' '. $currency['dollar'];
 
 		if ($cents != '00' && mb_strlen($cents) == 2) {
-			$return .= ' & '. self::__convertDoubles($cents) .' '. $currency['cent'];
+			$return .= ' '. $currency['and'] .' '. self::__convertDoubles($cents) .' '. $currency['cent'];
 		}
 
 		return $return;
