@@ -1,20 +1,19 @@
-Numword v1.4 - Number to Word Converter
-***************************************
+# Numword v1.5 #
 
-Requirements
-============
+A class capable of formatting a numeric value into a human readable word form. Works primarily on the English language but can easily be adapted by overwriting the class properties and setting a system locale.
 
-	* PHP 5.2.x
+## Requirements ##
 
-Features
-========
+* PHP 5.2.x
+* Multibyte String - http://php.net/manual/book.mbstring.php
 
-    * Convert single or multiple numbers
-    * Convert USD currency
-    * Convert all numbers within a string
-    * Supports up to octillions
+## Features ##
 
-Documentation
-=============
+* Convert single or multiple numbers
+* Convert currencies (primarily USD, EUR, GBP, AUD)
+* Convert all numbers within a string
+* Supports up to centillions
 
-	* http://www.milesj.me/resources/script/numword
+## Documentation ##
+
+Thorough documentation can be found here: http://milesj.me/resources/script/numword
