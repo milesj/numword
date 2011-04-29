@@ -11,7 +11,7 @@
 class Numword {
 
 	/**
-	 * Current version: http://milesj.me/resources/logs/numword
+	 * Current version.
 	 *
 	 * @access public
 	 * @var int
@@ -231,7 +231,7 @@ class Numword {
 			$return = self::$digits[$number];
 		}
 
-		return $return;
+		return str_replace('  ', ' ', $return);
 	}
 
 	/**
@@ -250,6 +250,8 @@ class Numword {
 			$return = self::$teens[$number];
 		} else if ($ln == 0) {
 			$return = self::$tens[$number];
+		} else if ($fn == 0) {
+			$return = self::$digits[$ln];
 		} else {
 			$return = self::$tens[$fn .'0'] . self::$sep . self::$digits[$ln];
 		}
