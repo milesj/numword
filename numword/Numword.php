@@ -1,11 +1,13 @@
 <?php
 /**
- * Numword - Converts a number to its word form.
+ * Numword
+ *
+ * Converts a number to its word form.
  * 
  * @author 		Miles Johnson - http://milesj.me
  * @copyright	Copyright 2006-2011, Miles Johnson, Inc.
  * @license 	http://opensource.org/licenses/mit-license.php - Licensed under The MIT License
- * @link		http://milesj.me/resources/script/numword
+ * @link		http://milesj.me/code/php/numword
  */
 
 class Numword {
@@ -181,7 +183,8 @@ class Numword {
 	}
 
 	/**
-	 * Converts american currency into its word format.
+	 * Converts currency into its word format. Internal currency values are based on setlocale().
+	 * You can overwrite the currency strings using the second argument.
 	 *
 	 * @access public
 	 * @param int $number

@@ -1,11 +1,13 @@
 <?php
 /**
- * Numword - Converts a number to its word form.
+ * Numword
+ *
+ * Converts a number to its word form.
  *
  * @author 		Miles Johnson - http://milesj.me
  * @copyright	Copyright 2006-2011, Miles Johnson, Inc.
  * @license 	http://opensource.org/licenses/mit-license.php - Licensed under The MIT License
- * @link		http://milesj.me/resources/script/numword
+ * @link		http://milesj.me/code/php/numword
  */
 
 // Turn on errors
@@ -16,7 +18,7 @@ function debug($var) {
 }
 
 // Include class and instantiate
-include_once 'numword/Numword.php';
+include_once '../numword/Numword.php';
 
 // Convert a single number
 debug(Numword::single(1337));

@@ -16,4 +16,4 @@ A class capable of formatting a numeric value into a human readable word form. W
 
 ## Documentation ##
 
-Thorough documentation can be found here: http://milesj.me/resources/script/numword
+Thorough documentation can be found here: http://milesj.me/code/php/numword
