@@ -4,6 +4,7 @@
  *
  * Converts a number to its word form.
  *
+ * @version		1.6
  * @author 		Miles Johnson - http://milesj.me
  * @copyright	Copyright 2006-2011, Miles Johnson, Inc.
  * @license 	http://opensource.org/licenses/mit-license.php - Licensed under The MIT License
@@ -18,7 +19,7 @@ class Numword {
 	 * @access public
 	 * @var int
 	 */
-	public $version = '1.5';
+	public $version = '1.6';
 
 	/**
 	 * Holds the basic numbers: 1-10
