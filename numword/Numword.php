@@ -3,7 +3,7 @@
  * Numword
  *
  * Converts a number to its word form.
- * 
+ *
  * @author 		Miles Johnson - http://milesj.me
  * @copyright	Copyright 2006-2011, Miles Johnson, Inc.
  * @license 	http://opensource.org/licenses/mit-license.php - Licensed under The MIT License
@@ -204,10 +204,10 @@ class Numword {
 		$cents  = trim(mb_strstr($number, $locale['mon_decimal_point']), $locale['mon_decimal_point']);
 		$amount = mb_substr($number, 0, mb_strpos($number, $locale['mon_decimal_point']));
 
-		$return = self::__convert($amount) .' '. $currency['dollar'];
+		$return = self::__convert($amount) . ' ' . $currency['dollar'];
 
 		if ($cents != '00' && mb_strlen($cents) == 2) {
-			$return .= ' '. $currency['and'] .' '. self::__convertDoubles($cents) .' '. $currency['cent'];
+			$return .= ' ' . $currency['and'] . ' ' . self::__convertDoubles($cents) . ' ' . $currency['cent'];
 		}
 
 		return $return;
@@ -256,7 +256,7 @@ class Numword {
 		} else if ($fn == 0) {
 			$return = self::$digits[$ln];
 		} else {
-			$return = self::$tens[$fn .'0'] . self::$sep . self::$digits[$ln];
+			$return = self::$tens[$fn . '0'] . self::$sep . self::$digits[$ln];
 		}
 
 		return $return;
@@ -279,8 +279,8 @@ class Numword {
 			$return = self::$digits[$fn] . self::$sep . self::$exponents[1];
 		}
 
-		if ($ln != '00') {
-			$return .= ' '. self::__convertDoubles($ln);
+		if ($ln !== '00') {
+			$return .= ' ' . self::__convertDoubles($ln);
 		}
 
 		return $return;
@@ -304,11 +304,11 @@ class Numword {
 		foreach ($parts as $index => $part) {
 			$ret = self::__convert(strrev($part));
 
-			if ($index > 0 && $part != '000') {
+			if ($index > 0 && $part !== '000') {
 				$ret .= self::$sep . self::$exponents[$cur];
 			}
 
-			if ($ret != '') {
+			if ($ret !== '') {
 				$newParts[$index] = $ret;
 			}
 
