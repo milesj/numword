@@ -18,6 +18,6 @@
 		"source": "https://github.com/milesj/php-numword"
 	},
 	"autoload": {
-		"psr-0": { "Numword": "numword" }
+		"psr-0": { "mjohnson\\Numword": "" }
 	}
 }
