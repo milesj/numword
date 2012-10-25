@@ -1,4 +1,4 @@
-# Numword v1.6 #
+# Numword v1.6.1 #
 
 A class capable of formatting a numeric value into a human readable word form. Works primarily on the English language but can easily be adapted by overwriting the class properties and setting a system locale.
 
