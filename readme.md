@@ -1,10 +1,11 @@
-# Numword v1.6.1 #
+# Numword v2.0.0 #
 
 A class capable of formatting a numeric value into a human readable word form. Works primarily on the English language but can easily be adapted by overwriting the class properties and setting a system locale.
 
 ## Requirements ##
 
-* PHP 5.2.x
+* PHP 5.3+ - v2.x
+* PHP 5.2+ - v1.x
 * Multibyte String - http://php.net/manual/book.mbstring.php
 
 ## Features ##

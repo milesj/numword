@@ -10,7 +10,7 @@ namespace mjohnson\numword;
 /**
  * Converts a number to its word form.
  *
- * @version	1.6.1
+ * @version	2.0.0
  * @package	mjohnson.gears
  */
 class Numword {
