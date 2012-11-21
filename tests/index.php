@@ -12,13 +12,16 @@
 
 // Turn on errors
 error_reporting(E_ALL);
+setlocale(LC_ALL, 'en_US.utf8');
 
 function debug($var) {
-	echo '<pre>'. print_r($var, true) .'</pre>';
+	echo '<pre>' . print_r($var, true) . '</pre>';
 }
 
 // Include class and instantiate
-include_once '../numword/Numword.php';
+include_once '../Numword.php';
+
+use \mjohnson\numword\Numword;
 
 // Convert a single number
 debug(Numword::single(1337));

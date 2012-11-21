@@ -1,16 +1,18 @@
 <?php
 /**
- * Numword
- *
- * Converts a number to its word form.
- *
- * @version		1.6.1
- * @author 		Miles Johnson - http://milesj.me
- * @copyright	Copyright 2006-2011, Miles Johnson, Inc.
- * @license 	http://opensource.org/licenses/mit-license.php - Licensed under The MIT License
+ * @copyright	Copyright 2006-2012, Miles Johnson - http://milesj.me
+ * @license		http://opensource.org/licenses/mit-license.php - Licensed under the MIT License
  * @link		http://milesj.me/code/php/numword
  */
 
+namespace mjohnson\numword;
+
+/**
+ * Converts a number to its word form.
+ *
+ * @version	1.6.1
+ * @package	mjohnson.gears
+ */
 class Numword {
 
 	/**
@@ -193,13 +195,17 @@ class Numword {
 			'and' => '&'
 		);
 
+		$locale['currency_symbol'] = $locale['currency_symbol'] ?: '$';
+		$locale['mon_decimal_point'] = $locale['mon_decimal_point'] ?: '.';
+		$locale['mon_thousands_sep'] = $locale['mon_thousands_sep'] ?: ',';
+
 		$number = trim(str_replace(array($locale['currency_symbol'], $locale['mon_thousands_sep']), '', $number));
 		$cents  = trim(mb_strstr($number, $locale['mon_decimal_point']), $locale['mon_decimal_point']);
 		$amount = mb_substr($number, 0, mb_strpos($number, $locale['mon_decimal_point']));
 
 		$return = self::__convert($amount) . ' ' . $currency['dollar'];
 
-		if ($cents != '00' && mb_strlen($cents) == 2) {
+		if ($cents !== '00' && mb_strlen($cents) === 2) {
 			$return .= ' ' . $currency['and'] . ' ' . self::__convertDoubles($cents) . ' ' . $currency['cent'];
 		}
 
