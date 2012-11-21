@@ -11,7 +11,7 @@ namespace mjohnson\numword;
  * Converts a number to its word form.
  *
  * @version	2.0.0
- * @package	mjohnson.gears
+ * @package	mjohnson.numword
  */
 class Numword {
 
