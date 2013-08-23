@@ -15,7 +15,7 @@
 		"php": ">=5.3"
 	},
 	"support": {
-		"source": "https://github.com/milesj/php-numword"
+		"source": "https://github.com/milesj/numword"
 	},
 	"autoload": {
 		"psr-0": { "mjohnson\\numword": "" }
